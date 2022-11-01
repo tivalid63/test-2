@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+     <title>Build a Survey Form</title>
+     <link rel="stylesheet" href="styles.css">
+     <style>
+         body {
+             background: #6e9899;
+             color: #fff;
+             margin: 0;
+             padding: 0;
+             font-family: sans-serif;
+         }
+
+         #header {
+             text-align: center;
+             margin: 10px;
+             padding: 10px;
+         }
+
+         #description {
+             font: italic;
+             width: 40%;
+             margin: auto;
+         }
+
+         #survey-form {
+             background-color: #262020;
+             margin: auto;
+             padding: 8%;
+             width: 100%;
+             max-width: 300px;
+
+         }
+
+         #survey-form input {
+             width: 100%;
+             font-size: 14px;
+             margin: 20px 0;
+             padding: 15px;
+             background-color: yellowgreen;
+             border: none;
+             color: #fff;
+             border-radius: 5px;
+             max-width: 370px;
+         }
+
+         input[type="radio"],
+         input[type="checkbox"] {
+              width: unset !important;
+              margin: 10px 0 !important;
+         }
+
+         #dropdown {
+             width: 100%;
+             height: 25px;
+             background-color: #011111;
+             color: #fff;
+             border-radius: 5px;
+
+         }
+
+         textarea{
+             width: 100%;
+             background-color: #011111;
+             color: #fff;
+             padding:
+         }
+
+         #submit {
+             margin: 10px auto;
+             padding: 15px;
+             font-size: 20px;
+             background-color:#617f80;
+             color: #fff;
+             border-radius:5px;
+             border: none;
+         }
+     </style>
+</head>
+<body>
+     <div id="header">
+     <h1 id="tilte">SURVEY FORM</h1>
+     <p id="description">Please fill the elements for this survey we are building as a part of Microverse trials</p>
+</div>
+
+     <form id="survey-form" >
+         <label for="name"id="name">Name:</label>
+         <input type="text" id="name" name="name" placeholder="Enter
+name">
+         <label for="email" id="email-label">Email:</label>
+         <input type="email" id="email" name="email"
+placeholder="Enter email" required>
+         <label for="number" id="number-label">Number:</label>
+         <input type="number" id="number" name="name" placeholder="Please enter your
+number" min="10" max="'100">
+
+         <label for="dropdown"><p>What is your current role?</p> </label>
+         <select id="dropdown">
+             <option>Student</option>
+             <option>Working Full-time</option>
+             <option>Part Time Job</option>
+             <option>Freelancer</option>
+         </select>
+
+         <div class="form-group">
+         <p>Would you recommed this school to a friend?</p>
+         <input type="radio" name="radio" value="definitely">
+         <label for="definitely">Definitely</label>
+         <br>
+         <input type="radio" name="radio" value="maybe">
+         <label for="maybe">Maybe</label>
+          <br>
+         <input type="radio" name="radio" value="not sure"> <label
+for="not sure">Not Sure</label>
+         </div>
+
+     <div class="form-group">
+         <p>What langauges would you like learn </p>
+         <label for="html">
+         <input type="checkbox" name="checkbox" value="HTML">HTML
+     </label>
+     <br>
+     <label for="CSS">
+         <input type="checkbox" name="checkbox" value="CSS">CSS
+     </label>
+     <br>
+
+     <label for="JavaScript">
+         <input type="checkbox" name="checkbox"
+value="JavaScript">JavaScript
+     </label>
+     <br>
+     <label for="Reactjs">
+         <input type="checkbox" name="checkbox" value="React JS">Reactjs
+     </label>
+     </div>
+
+         <textarea id="" cols="30" rows="10" placeholder="Your comments
+here please..."></textarea>
+       <button id="submit">Submit</button>
+
+     </form>
+
+</body>
+</html>
